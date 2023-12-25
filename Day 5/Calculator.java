@@ -13,33 +13,30 @@ public class Calculator {
         System.out.println("Enter the Opaerator (+, - , * , /)");
         char opaerator = sc.next().charAt(0);
 
-        int Answer;
+        int Answer = 0;
         switch (opaerator) {
 
             case '+': // if Enter Addition operator this case execute
                 Answer = num1 + num2;
-                System.out.println("The Answer is : " + Answer); // output
                 break;
 
             case '-': // if Enter substraction operator this case execute
                 Answer = num1 - num2;
-                System.out.println("The Answer is : " + Answer); // output
                 break;
 
             case '*': // if Enter Multiplication operator this case execute
                 Answer = num1 * num2;
-                System.out.println("The Answer is : " + Answer); // output
                 break;
 
             case '/':// if Enter Division operator this case execute
                 Answer = num1 / num2;
-                System.out.println("The Answer is : " + Answer); // output
                 break;
 
             default: // if Invalid Operator enter then this default case execute
                 System.out.println("Invalid Operator, Try Again."); // output
                 break;
         }
+        System.out.println("The Answer is : " + Answer); // output
         sc.close();
     }
 }
