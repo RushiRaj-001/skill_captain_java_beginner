@@ -1,4 +1,5 @@
 
+
 abstract class Vehicle {
     String make;
     String model;
